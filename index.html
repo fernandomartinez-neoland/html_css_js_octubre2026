@@ -1,0 +1,27 @@
+<!-- Esta línea le dice al navegador que vamos a usar el HTML moderno de las páginas web. -->
+<!DOCTYPE html>
+<!-- Aquí empieza la página. "es" indica que el idioma de los textos es español. -->
+<html lang="es">
+<!-- En esta parte guardamos información de la página que normalmente no se ve dentro de ella. -->
+<head>
+    <!-- Ayuda al navegador a mostrar bien las letras, incluidas las tildes y la ñ. -->
+    <meta charset="UTF-8">
+    <!-- Hace que la página se adapte al tamaño de la pantalla, como la de un móvil. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Es el nombre que aparece en la pestaña del navegador. Podemos cambiar "Document". -->
+    <title>Document</title>
+    <!-- Conecta esta página con su archivo CSS para poder cambiar colores, tamaños y formas. -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- Aquí empieza lo que sí vemos en la página. El nombre "cuerpo" lo pusimos nosotros
+     para que JavaScript pueda encontrar esta parte si alguna vez la necesita. -->
+<body id="cuerpo">
+
+<!-- Este botón viene de la pieza <button> de HTML. Su texto invita a pulsarlo
+     y el id "consola" permite que JavaScript lo encuentre y le añada una acción. -->
+<button id="consola">Imprimir en consola</button>
+    <!-- Carga nuestro archivo JavaScript. Gracias a él, el botón puede hacer algo al pulsarlo. -->
+    <script src="./assets/js/script.js"></script>
+</body>
+<!-- Aquí termina el contenido HTML de la página. -->
+</html>
