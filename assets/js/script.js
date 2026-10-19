@@ -11,5 +11,6 @@ imp_cons.addEventListener("click", () => {
   titulo.textContent = "el texto que quieras poner";
   imagen.src =
     "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original";
+    imagen.style.width='300px';
   cuerpo.appendChild(imagen);
 });
