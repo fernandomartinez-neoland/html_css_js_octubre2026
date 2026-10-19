@@ -1,15 +1,15 @@
-// "document" es la página que el navegador acaba de leer. Buscamos el botón
-// que tiene id="consola", escrito en index.html, y guardamos ese botón en una cajita.
-const imp_cons=document.getElementById("consola")
+const imp_cons = document.getElementById("consola");
 
-// También buscamos la parte principal de la página, que tiene id="cuerpo".
-// La guardamos por si luego queremos cambiar algo de esa parte desde JavaScript.
-const cuerpo=document.getElementById("cuerpo")
+const cuerpo = document.getElementById("cuerpo");
 
+const titulo = document.getElementById("title");
 
-// Le decimos al botón: "cuando alguien haga clic, ejecuta lo que está entre las llaves".
-imp_cons.addEventListener('click',()=>{
-    // Escribe el botón en la consola del navegador, una zona para ver mensajes de prueba.
-    // Podemos cambiar esto para mostrar otro mensaje o hacer que la página reaccione.
-    console.log(imp_cons)
-} )
+imp_cons.addEventListener("click", () => {
+  const imagen = document.createElement("img");
+
+  
+  titulo.textContent = "el texto que quieras poner";
+  imagen.src =
+    "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original";
+  cuerpo.appendChild(imagen);
+});
